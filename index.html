@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EduSlide - Oligopoli & Game Theory, Pengantar Ekonomi Mikro BK 3">
+  <title>EduSlide — Oligopoli & Game Theory</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <header class="topbar">
+      <button class="icon-btn" id="menuBtn" aria-label="Buka menu">☰</button>
+      <div class="brand">EDUSLIDE <span>• BK 3</span></div>
+      <div class="top-actions">
+        <button class="icon-btn" id="speakBtn" title="Dengarkan slide">🔊</button>
+        <button class="icon-btn" id="stopSpeakBtn" title="Berhenti">⏹</button>
+        <button class="icon-btn" id="themeBtn" title="Mode gelap/terang">🌙</button>
+        <button class="icon-btn" id="fullscreenBtn" title="Fullscreen">⛶</button>
+      </div>
+    </header>
+
+    <aside class="drawer" id="drawer">
+      <div class="drawer-head">
+        <div><strong>Daftar Materi</strong><small>Oligopoli & Game Theory</small></div>
+        <button class="icon-btn" id="closeMenu">×</button>
+      </div>
+      <nav id="slideMenu"></nav>
+    </aside>
+    <div class="overlay" id="overlay"></div>
+
+    <main id="slides"></main>
+
+    <footer class="controls">
+      <button class="nav-btn" id="prevBtn">← Sebelumnya</button>
+      <div class="progress-wrap">
+        <div class="progress-label"><span id="slideTitle">Cover</span><span id="counter">01 / 17</span></div>
+        <div class="progress-track"><div class="progress-bar" id="progressBar"></div></div>
+      </div>
+      <button class="nav-btn primary" id="nextBtn">Berikutnya →</button>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
